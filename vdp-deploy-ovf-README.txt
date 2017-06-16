@@ -3,4 +3,4 @@
 3. If the Linux VM has internet access, then the script will download and install ovf tool
 If not, it will exit the script and you will have to manually install ovf tool on linux and then run the script
 
-4. If the script detects the ovftool is already install it will proceed further with the install where user inputs are requested.
+4. If the script detects the ovftool is already installed it will proceed further with the deployment of VDP where user inputs are requested.
