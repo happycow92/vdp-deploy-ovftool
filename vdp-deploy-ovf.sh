@@ -41,8 +41,21 @@ else
 				printf "\nOVF Tool exists. Not downloading again\n"
 			fi
         else
-			printf "No network connection. Download OVF tool manually and install it on this appliance"
-			exit 1
+			printf "No network connection. Download OVF tool manually and install it on this appliance\n"
+			read -p "Is OVF Tool Aready installed? Y/N: " option
+			case $option in
+				N|n)
+					printf "\nExiting Script\n\n"
+					exit 1
+				;;
+				Y|y)
+					printf "\nThank you. Continuing further\n\n"
+				;;
+				?)
+					printf "\nInvalid Option. Exiting\n\n"
+					exit 1
+				;;
+			esac
         fi
 
 
